@@ -1,7 +1,4 @@
-import 'dart:ffi';
-
 import 'package:app/screen/home_screen.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -47,7 +44,7 @@ class LoginScreen extends StatelessWidget {
               width: double.infinity,
               child: FilledButton(
                 onPressed: () => {
-                  Navigator.of(context).push(
+                  Navigator.of(context).pushReplacement(
                     MaterialPageRoute(
                       builder: (context) => const HomeScreen(),
                     ),
